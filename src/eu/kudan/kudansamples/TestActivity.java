@@ -18,7 +18,8 @@ public class TestActivity extends ARActivity implements ARImageTrackableListener
 		wavesTrackable.loadFromAsset("waves.png");
 		
 		// create video texture.
-		ARVideoTexture videoTexture = new ARVideoTexture("waves.mp4");
+        ARVideoTexture videoTexture = new ARVideoTexture();
+        videoTexture.loadFromAsset("waves.mp4");
 		ARVideoNode videoNode = new ARVideoNode(videoTexture);
 		
 		// add video to the waves trackable.
